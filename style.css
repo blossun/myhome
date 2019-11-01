@@ -1,0 +1,70 @@
+  body {
+    margin: 0px;
+    font-family: 'Open Sans','Nanum Gothic',arial,AppleGothic,Dotum,sans-serif;
+  }
+  .topArea{
+    background-color: #efebe5 ;
+    padding: 10px;
+    text-align: right;
+  }
+  .topArea a{
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'Open Sans','Nanum Gothic',arial,AppleGothic,Dotum,sans-serif;
+    color: DimGray;
+    padding: 0px 5px;
+  }
+  /* .topMemu{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+
+  } */
+
+  #title {
+    display: block;
+    color: DimGray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 30px 0px;
+    margin: 30px 0px;
+  }
+  .login {
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 40px auto;
+    border: 1px solid #d7d5d5;
+    width: 400px;
+  }
+  .login h4{
+    font-size: 10px;
+    color: gray;
+  }
+  fieldset {
+    border: 0px;
+  }
+  .LoginTable{
+    display: table;
+    table-layout: fixed;
+    width: 350px;
+    text-align: center;
+  }
+  .LoginTable tr{
+    display: table-row;
+    margin: 0px;
+  }
+  .LoginTable td{
+    display: table-cell;
+  }
+  .idurl{
+    text-decoration: none;
+    color: DimGray;
+    font-size: 11px;
+    margin: 5px;
+  }
+  .btnLogin{
+    background-color: black;
+    color: white;
+    
+  }
