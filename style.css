@@ -16,10 +16,10 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 
 
   .topArea{
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
     margin: 0 auto;
     background-color: #efebe5 ;
     padding: 10px;
@@ -40,25 +40,18 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
   .gnbWrap{
     width: 100%;
     height: 60px;
-    background: #fff;
     position: relative;
     margin: 0 auto;
-    background: rgba(255,255,255,0.9);
     border-bottom: 1px #e8e8e8 solid;
+    text-align: center;
   }
   .slideUp{
     position: fixed;
-    top: 40px;
+    top: 0px;
     left: 0;
     width: 100%;
     margin: 0 auto;
-    width: 100%;
-    height: 60px;
     background: #fff;
-    position: relative;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.9);
-    border-bottom: 1px #e8e8e8 solid;
   }
   .gnbWrap li{
     display: inline-block;
@@ -73,7 +66,15 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
     padding: 0 20px;
     letter-spacing: 1px;
   }
-  #logo {
+  .top_logo{
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 308px;
+    text-align: center;
+    z-index: 99;
+  }
+
+  /* #logo {
     display: block;
     color: DimGray;
     text-align: center;
@@ -81,7 +82,7 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
     font-size: 40px;
     padding: 50px 0px;
     margin: 40px 0 0 0;
-  }
+  } */
   .contents{
     padding: 70px 20px 50px;
     width: 100%;
@@ -99,10 +100,11 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
   .login h4{
     font-size: 10px;
     color: gray;
+    margin: 5px;
   }
   fieldset {
     border: 0px;
-    padding: 0px;
+    padding: 30px;
   }
   .LoginTable{
     display: table;

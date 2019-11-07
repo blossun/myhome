@@ -1,14 +1,10 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Javakong Cafe</title>
-    <link rel="stylesheet" type="text/css" href="style.css?rnd=132">
-  </head>
+  <?php require('./view/head.html')?>
   <body>
     <?php require('./view/top.php')?>
     <div class="contents">
-      <div class="join">
+      <div class="qna">
         <div class="title">
           <h2>QnA</h2>
         </div>

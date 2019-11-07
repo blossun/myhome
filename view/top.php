@@ -1,4 +1,4 @@
-<div class="header">
+<div id="header">
   <div class="topArea">
     <a href="login.php">LOGIN</a>
     <a href="join.php">JOIN US</a>
@@ -7,9 +7,9 @@
     <a href="review.php">REVIEW</a>
 
   </div>
-<div class="logo">
-<a href="index.php" id="logo">Javakong Cafe</a>
-</div>
+<h1 class="top_logo">
+<a href="index.php"><img class="banner_image" width="308" height="81" title="자바콩" alt="자바콩" src="./image/logo_banner.png"></a>
+</h1>
 <div class="gnbWrap">
   <ul>
     <li><a href="./product/list.html">TOP</a></li>
@@ -21,12 +21,31 @@
 </div>
 </div>
 
-<!-- <script>
+<script>
+  /*
   window.onscroll = function(){ScrollEffect()};
   function ScrollEffect(){
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-    document.querySelector('.gnbWrap').className = "slideUp";
+    document.querySelector('#header').className = "slideUp";
+    document.querySelector('.top_logo').style.display='none';
+    document.querySelector('.contents').style.marginTop='100px';
+    // document.querySelector('.top_logo').
     }
   }
+  */
 
-</script> -->
+  // use jQuery
+  var position = $(window).scrollTop();
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll > position){
+      document.querySelector('#header').className = "slideUp";
+      document.querySelector('.top_logo').style.display='none';
+      document.querySelector('.contents').style.marginTop='100px';
+    }else{
+      document.querySelector('#header').className = "";
+      document.querySelector('.top_logo').style.display='';
+      document.querySelector('.contents').style.marginTop='';
+    }
+  })
+</script>
