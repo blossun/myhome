@@ -11,10 +11,22 @@
         <form action="login.php" method="POST">
           <fieldset> <!--폼 요소를 그룹으로 묶는 태그 -->
             <legend></legend> <!-- 그룹으로 묶는 구역에 제목을 붙이는 태그 -->
+            <table class="LoginTable">
+              <caption>로그인</caption>
+              <tr>
+                <td><input type="text" name="member_id" placeholder="ID"></td>
+                <td rowspan="2" style="border: 0;
+                width: 182px;"><input type="submit" value="로그인" class="btnLogin"></td>
+              </tr>
+              <tr>
+                <td><input type="password" name="member_password" placeholder="PASSWORD"></td>
+              </tr>
+
+
+
+            </table>
             <!-- <div class="LoginTable"> -->
-            <label for="id"><input type="text" name="id" placeholder="ID"></label>
-            <label for="password"><input type="password" name="password" placeholder="PASSWORD"></label>
-            <label for="login"><input type="submit" value="로그인" class="btnLogin"></label>
+
             <p>
             <a href="join.html" class="idurl">회원가입</a>
             <a href="find_id.html" class="idurl">아이디찾기</a>
